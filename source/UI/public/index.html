@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/output.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>hi</h1>
+    <div class="m-48">
+      <!-- input -->
+      <!-- <div>
+        <label class="font-roboto font-normal text-xs">Name</label>
+        <input
+          class="font-roboto font-medium text-sm bottom-2"
+          placeholder="Enter text"
+        />
+      </div> -->
+      <!-- ====== -->
+      <div>
+        <label class="input-label">Name</label>
+        <div
+          class="input-box focus:border-blue-500 active:border-blue-500 hover:border-blue-500"
+        >
+          <input
+            class="input-text"
+            type="text"
+            placeholder="Enter text"
+            aria-label="Full name"
+          />
+        </div>
+      </div>
+      <!-- ===== -->
+      <div class="mt-5">
+        <label class="input-label">Name</label>
+        <div class="input-box border-blue-500">
+          <input
+            class="input-text"
+            type="text"
+            placeholder="Enter text"
+            aria-label="Full name"
+          />
+        </div>
+      </div>
+      <!-- ===== -->
+      <div class="mt-5">
+        <label class="input-label text-red-500">Name</label>
+        <div class="input-box border-red-500">
+          <input
+            class="input-text text-red-500"
+            type="text"
+            placeholder="Enter text"
+            aria-label="Full name"
+          />
+        </div>
+      </div>
+      <!-- buttons -->
+      <div class="mt-10">
+        <button class="btn btn-primary">BUTTON</button>
+      </div>
+      <!-- ===== -->
+      <div class="mt-10">
+        <button class="btn btn-disabled" disabled>BUTTON</button>
+      </div>
+      <!-- ===== -->
+      <div class="mt-10">
+        <button class="btn btn-secondary">BUTTON</button>
+      </div>
+      <!-- ===== -->
+      <div class="mt-10">
+        <button class="btn btn-primary btn-with-icon">
+          <img src="./img/share.svg" /> BUTTON
+        </button>
+      </div>
+      <!-- ===== -->
+      <div class="mt-10">
+        <button class="btn btn-disabled btn-with-icon" disabled>
+          <img src="./img/share_1.svg" />
+          BUTTON
+        </button>
+      </div>
+      <!-- ===== -->
+      <div class="mt-10">
+        <button class="btn btn-secondary btn-with-icon">
+          <img src="./img/share_1.svg" />
+          BUTTON
+        </button>
+      </div>
+      <!-- ===== -->
+      <div class="mt-10">
+        <button class="btn btn-primary btn-with-icon">
+          ADD TO CARD
+          <img src="./img/circle-plus.svg" />
+        </button>
+      </div>
+      <!-- ===== -->
+      <div class="mt-10">
+        <button class="btn btn-disabled btn-with-icon">
+          ADD TO CARD
+          <img src="./img/circle-plus_1.svg" />
+        </button>
+      </div>
+      <!-- ===== -->
+      <div class="mt-10">
+        <button class="btn btn-secondary btn-with-icon">
+          ADD TO CARD
+          <img src="./img/circle-plus_2.svg" />
+        </button>
+      </div>
+      <!-- ===droopdown== -->
+      <div class="mt-10">
+        <button class="btn btn-primary btn-with-icon">
+          ADD TO CARD
+          <img src="./img/bottom.svg" />
+        </button>
+        <!-- <div>
+          <ul>
+            <li class="font-roboto font-bold text-sm">something1</li>
+            <li class="font-roboto font-bold text-sm">something2</li>
+            <li class="font-roboto font-bold text-sm">something3</li>
+          </ul>
+        </div> -->
+      </div>
+      <!-- ===== -->
+      <!-- checkbox -->
+      <div class="mt-10 items-center">
+        <input class="checkbox-input border-cyan-300" type="checkbox" />
+        <!-- appearance-none -->
+        <label class="btn-font">Unselected</label>
+      </div>
+      <!-- ======= -->
+      <div class="mt-10 items-center">
+        <input
+          class="checkbox-input border-cyan-300 text-cyan-300"
+          type="checkbox"
+          checked
+        />
+        <label class="btn-font">selected</label>
+      </div>
+      <!-- ======== -->
+      <div class="mt-10 items-center">
+        <input
+          id="intermediatecheckbox"
+          class="checkbox-input border-cyan-300 text-cyan-300"
+          type="checkbox"
+        />
+        <label class="btn-font">intermediate</label>
+      </div>
+      <!-- ======== -->
+      <div class="mt-10 items-center">
+        <input
+          class="checkbox-input border-gray-400"
+          type="checkbox"
+          disabled
+        />
+        <label class="btn-font">Unselected</label>
+      </div>
+      <!-- ======= -->
+      <div class="mt-10 items-center">
+        <input
+          class="checkbox-input border-gray-400 text-gray-400"
+          type="checkbox"
+          checked
+          disabled
+        />
+        <label class="btn-font">selected</label>
+      </div>
+      <!-- ======== -->
+      <div class="mt-10 items-center">
+        <input
+          id="intermediatecheckbox-disabled"
+          class="checkbox-input border-gray-400 text-gray-400"
+          type="checkbox"
+          disabled
+        />
+        <label class="btn-font">intermediate</label>
+      </div>
+      <!-- ======== -->
+      <!-- radio -->
+      <div class="mt-10 items-center">
+        <input class="checkbox-input border-cyan-300" type="radio" />
+        <label class="btn-font">Unselected</label>
+      </div>
+      <!-- ======= -->
+      <div class="mt-10 items-center">
+        <input
+          class="checkbox-input border-cyan-300 text-cyan-300"
+          type="radio"
+          checked
+        />
+        <label class="btn-font">selected</label>
+      </div>
+      <!-- ======= -->
+      <div class="mt-10 items-center">
+        <input class="checkbox-input border-gray-400" type="radio" disabled />
+
+        <label class="btn-font">Unselected</label>
+      </div>
+      <!-- ======= -->
+      <div class="mt-10 items-center">
+        <input
+          class="checkbox-input border-gray-400 text-gray-400"
+          type="radio"
+          checked
+          disabled
+        />
+        <label class="btn-font">selected</label>
+      </div>
+      <!-- ======= -->
+    </div>
+
+    <!-- =======for intermediate checkbox -->
+    <script type="text/javascript">
+      const checkbox = document.getElementById("intermediatecheckbox");
+      checkbox.indeterminate = true;
+    </script>
+    <script type="text/javascript">
+      const checkbox1 = document.getElementById(
+        "intermediatecheckbox-disabled"
+      );
+      checkbox1.indeterminate = true;
+    </script>
+  </body>
+</html>

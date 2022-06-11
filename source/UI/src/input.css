@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .input-label {
+    @apply font-roboto font-normal text-xs text-gray-400 pl-2;
+  }
+  .input-box {
+    @apply border-b-2 border-gray-400 py-1;
+  }
+  .input-text {
+    @apply appearance-none bg-transparent border-none py-2 w-full text-gray-700 mr-3 px-2 leading-tight focus:outline-none;
+  }
+
+  /* buttons */
+  .btn {
+    @apply font-roboto font-bold text-sm py-3 px-8 rounded-lg;
+  }
+  .btn-primary {
+    @apply bg-yellow-300 text-orange-900 hover:bg-yellow-500;
+  }
+  .btn-disabled {
+    @apply bg-slate-300 text-slate-700;
+  }
+  .btn-secondary {
+    @apply text-cyan-900 bg-cyan-200 hover:bg-cyan-400;
+  }
+  .btn-with-icon {
+    @apply inline-flex gap-2 items-center;
+  }
+  .btn-font {
+    @apply font-roboto font-medium text-base pl-2;
+  }
+  .checkbox-input {
+    @apply focus:ring-0 w-6 h-6;
+  }
+}

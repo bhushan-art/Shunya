@@ -43,25 +43,27 @@
       <!-- ===== -->
       <div class="mt-5">
         <label class="input-label">Name</label>
-        <div class="input-box border-blue-500">
+        <div class="input-box border-blue-500 flex justify-center items-center">
           <input
             class="input-text"
             type="text"
             placeholder="Enter text"
             aria-label="Full name"
           />
+          <img class="float-right" src="./img/circle-checked-blue.svg" />
         </div>
       </div>
       <!-- ===== -->
       <div class="mt-5">
         <label class="input-label text-red-500">Name</label>
-        <div class="input-box border-red-500">
+        <div class="input-box border-red-500 flex justify-center items-center">
           <input
             class="input-text text-red-500"
             type="text"
             placeholder="Enter text"
             aria-label="Full name"
           />
+          <img class="float-right" src="./img/alert-circle.svg" />
         </div>
       </div>
       <!-- buttons -->
@@ -217,6 +219,321 @@
         <label class="btn-font">selected</label>
       </div>
       <!-- ======= -->
+      <div class="mt-10">
+        <label
+          for="default-toggle-1"
+          class="inline-flex relative items-center cursor-pointer"
+        >
+          <input
+            type="checkbox"
+            value=""
+            id="default-toggle-1"
+            class="sr-only peer"
+          />
+          <div
+            class="w-11 h-6 border-2 border-blue-600 peer-checked:border-blue-600 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"
+          >
+            <!-- bg-gray-200 peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 dark:border-gray-600-->
+          </div>
+          <span class="ml-3 text-sm font-medium text-gray-900">
+            <!-- dark:text-gray-300 -->
+            Toggle me</span
+          >
+        </label>
+      </div>
+      <!-- ===== -->
+      <!-- ========toggle active======== -->
+      <div class="mt-10">
+        <label
+          for="toggle-a"
+          class="inline-flex relative items-center cursor-pointer"
+        >
+          <input type="checkbox" value="" id="toggle-a" class="sr-only peer" />
+          <div class="toggle-box peer toggle-active"></div>
+          <span class="toggle-label"> active</span>
+        </label>
+      </div>
+      <!-- ====toggle disabled==== -->
+      <div class="mt-10">
+        <label
+          for="toggle-d"
+          class="inline-flex relative items-center cursor-pointer"
+        >
+          <input
+            type="checkbox"
+            value=""
+            id="toggle-d"
+            class="sr-only peer"
+            disabled
+          />
+          <div class="toggle-box peer toggle-inactive"></div>
+          <span class="toggle-label">Inactive disabled</span>
+        </label>
+      </div>
+      <!-- =========== -->
+      <!-- ====toggle active disabled==== -->
+      <div class="mt-10">
+        <label
+          for="toggle-d"
+          class="inline-flex relative items-center cursor-pointer"
+        >
+          <input
+            type="checkbox"
+            value=""
+            id="toggle-d"
+            class="sr-only peer"
+            checked
+            disabled
+          />
+          <div class="toggle-box peer toggle-inactive"></div>
+          <span class="toggle-label">active disabled</span>
+        </label>
+      </div>
+      <!-- =========== -->
+      <!-- shopping -->
+      <!-- card-red-active -->
+      <div class="mt-10">
+        <button class="bg-amber-400 rounded-lg hover:bg-amber-500">
+          <img class="p-2" src="./img/cart.svg" />
+        </button>
+      </div>
+
+      <!-- =================== -->
+      <!-- card-red-disabled -->
+      <div class="mt-10">
+        <button class="bg-amber-400 rounded-lg" disabled>
+          <img class="p-2" src="./img/cart.svg" />
+        </button>
+      </div>
+
+      <!-- =================== -->
+      <!-- card-white-active -->
+      <div class="mt-10">
+        <button class="bg-amber-400 rounded-lg hover:bg-amber-500">
+          <img class="p-2" src="./img/cart-white.svg" />
+        </button>
+      </div>
+
+      <!-- =================== -->
+      <!-- card-white-disabled -->
+      <div class="mt-10">
+        <button class="bg-gray-200 rounded-lg" disabled>
+          <img class="p-2" src="./img/cart-gray.svg" />
+        </button>
+      </div>
+
+      <!-- =================== -->
+      <!-- card-blue-active -->
+      <div class="mt-10">
+        <button class="border-2 border-cyan-800 rounded-lg">
+          <img class="p-2" src="./img/cart-blue.svg" />
+        </button>
+      </div>
+
+      <!-- =================== -->
+      <!-- card-blue-hover -->
+      <div class="mt-10">
+        <button
+          class="border-2 border-cyan-800 rounded-lg bg-cyan-800 hover:bg-cyan-800"
+        >
+          <img class="p-2" src="./img/cart-white.svg" />
+        </button>
+      </div>
+
+      <!-- =================== -->
+      <!-- card-blue-disabled -->
+      <div class="mt-10">
+        <button class="border-2 border-cyan-800 rounded-lg" disabled>
+          <img class="p-2" src="./img/cart-blue.svg" />
+        </button>
+      </div>
+
+      <!-- =================== -->
+      <!-- card-black-active -->
+      <div class="mt-10">
+        <button class="bg-blue-100 rounded-lg hover:bg-blue-300">
+          <img class="p-2" src="./img/cart-black.svg" />
+        </button>
+      </div>
+
+      <!-- =================== -->
+      <!-- share and communication -->
+      <!-- share active -->
+      <div class="mt-10">
+        <button
+          class="flex gap-3 justify-center items-center bg-cyan-600 hover:bg-cyan-800 px-4 py-2 rounded-lg"
+        >
+          <img src="./img/share-white.svg" />
+          <span class="font-roboto font-medium text-base text-white">14</span>
+        </button>
+      </div>
+      <!-- =================== -->
+      <!-- share disabled -->
+      <div class="mt-10">
+        <button
+          class="flex gap-3 justify-center items-center bg-cyan-600 px-4 py-2 rounded-lg"
+          disabled
+        >
+          <img src="./img/share-white.svg" />
+          <span class="font-roboto font-medium text-base text-white">14</span>
+        </button>
+      </div>
+      <!-- =================== -->
+      <!-- communication active -->
+      <div class="mt-10">
+        <button
+          class="flex gap-3 justify-center items-center bg-orange-700 hover:bg-orange-800 px-4 py-2 rounded-lg"
+        >
+          <img src="./img/comment.svg" />
+          <span class="font-roboto font-medium text-base text-white">14</span>
+        </button>
+      </div>
+      <!-- =================== -->
+      <!-- communication disabled -->
+      <div class="mt-10">
+        <button
+          class="flex gap-3 justify-center items-center bg-orange-700 px-4 py-2 rounded-lg"
+          disabled
+        >
+          <img src="./img/comment.svg" />
+          <span class="font-roboto font-medium text-base text-white">14</span>
+        </button>
+      </div>
+      <!-- =================== -->
+      <!-- Fb -->
+      <div class="mt-10">
+        <button
+          class="flex gap-3 justify-center items-center border border-gray-400 bg-white px-6 py-3 rounded-lg"
+        >
+          <img src="./img/FB.svg" />
+          <span class="font-roboto font-normal text-sm">Facebook</span>
+        </button>
+      </div>
+      <!-- =================== -->
+      <!-- google -->
+      <div class="mt-10">
+        <button
+          class="flex gap-3 justify-center items-center border border-gray-400 bg-white px-6 py-3 rounded-lg"
+        >
+          <img src="./img/Google.svg" />
+          <span class="font-roboto font-normal text-sm">Google</span>
+        </button>
+      </div>
+      <!-- =================== -->
+      <!-- navigation filled white arrow active small-->
+      <div class="mt-10">
+        <button class="bg-cyan-700 p-2 rounded-md hover:bg-cyan-900">
+          <img src="./img/chevron-right.svg" />
+        </button>
+      </div>
+      <!-- =================== -->
+      <!-- navigation filled white arrow disabled small-->
+      <div class="mt-10">
+        <button class="bg-cyan-700 p-2 rounded-md" disabled>
+          <img src="./img/chevron-right.svg" />
+        </button>
+      </div>
+      <!-- =================== -->
+      <!-- navigation filled white arrow active big-->
+      <div class="mt-10">
+        <button class="bg-cyan-700 p-3 rounded-md hover:bg-cyan-900">
+          <img src="./img/right.svg" />
+        </button>
+      </div>
+      <!-- =================== -->
+      <!-- navigation filled white arrow disabled big-->
+      <div class="mt-10">
+        <button class="bg-cyan-700 p-3 rounded-md" disabled>
+          <img src="./img/right.svg" />
+        </button>
+      </div>
+      <!-- =================== -->
+      <!-- navigation  white arrow active small-->
+      <div class="mt-10">
+        <button class="border-2 border-cyan-900 p-2 rounded-md">
+          <img src="./img/chevron-right-blue.svg" />
+        </button>
+      </div>
+      <!-- =================== -->
+      <!-- navigation  white arrow hover small-->
+      <div class="mt-10">
+        <button class="bg-cyan-900 p-2 rounded-md hover:bg-cyan-900">
+          <img src="./img/chevron-right.svg" />
+        </button>
+      </div>
+      <!-- =================== -->
+      <!-- navigation filled white arrow disabled small-->
+      <div class="mt-10">
+        <button class="border-2 border-cyan-900 p-2 rounded-md" disabled>
+          <img src="./img/chevron-right-blue.svg" />
+        </button>
+      </div>
+      <!-- =================== -->
+      <!-- navigation filled white arrow active big-->
+      <div class="mt-10">
+        <button class="border-2 border-cyan-900 p-3 rounded-md">
+          <img src="./img/right-blue.svg" />
+        </button>
+      </div>
+      <!-- =================== -->
+      <!-- navigation filled white arrow active big-->
+      <div class="mt-10">
+        <button class="bg-cyan-900 p-3 rounded-md hover:bg-cyan-900">
+          <img src="./img/right.svg" />
+        </button>
+      </div>
+      <!-- =================== -->
+      <!-- navigation filled white arrow disabled big-->
+      <div class="mt-10">
+        <button class="border-2 border-cyan-900 p-3 rounded-md" disabled>
+          <img src="./img/right-blue.svg" />
+        </button>
+      </div>
+      <!-- =================== -->
+
+      <!-- dropdown -->
+      <div class="mt-10">
+        <div class="flex justify-center">
+          <div>
+            <button
+              id="menu-btn"
+              class="flex justify-center items-center gap-2 bg-cyan-400 py-4 px-8 hover:bg-cyan-600"
+            >
+              <span class="font-roboto text-xl font-normal text-white"
+                >Dropdown</span
+              >
+              <img src="./img/dropdown-arrow.svg" />
+            </button>
+            <div
+              id="dropdown"
+              class="hidden flex-col overflow-clip bg-gray-400"
+            >
+              <a
+                href="#"
+                class="font-roboto text-xl font-normal flex justify-center p-2 hover:bg-slate-300"
+                >item1</a
+              >
+              <a
+                href="#"
+                class="font-roboto text-xl font-normal flex justify-center p-2 hover:bg-slate-300"
+                >item2</a
+              >
+              <a
+                href="#"
+                class="font-roboto text-xl font-normal flex justify-center p-2 hover:bg-slate-300"
+                >item3</a
+              >
+              <a
+                href="#"
+                class="font-roboto text-xl font-normal flex justify-center p-2 hover:bg-slate-300"
+                >item4</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ===================== -->
+      <!-- ====== -->
     </div>
 
     <!-- =======for intermediate checkbox -->
@@ -229,6 +546,18 @@
         "intermediatecheckbox-disabled"
       );
       checkbox1.indeterminate = true;
+    </script>
+    <!-- for dropdown using btn n div -->
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const menubtn = document.querySelector("#menu-btn");
+        const dropdown = document.querySelector("#dropdown");
+
+        menubtn.addEventListener("click", () => {
+          dropdown.classList.toggle("hidden");
+          dropdown.classList.toggle("flex");
+        });
+      });
     </script>
   </body>
 </html>

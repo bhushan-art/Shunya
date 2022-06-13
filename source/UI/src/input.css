@@ -48,4 +48,23 @@
   .toggle-inactive {
     @apply peer-checked:bg-gray-400 border-gray-400 peer-checked:border-gray-400;
   }
+
+  /* tab */
+  .tab-item {
+    @apply font-roboto font-bold text-sm text-gray-400 hover:text-black focus:text-black hover:border-b hover:border-b-blue-300 focus:border-b focus:border-b-blue-300 focus:outline-none focus:ring-0 px-4 py-3;
+  }
+  .adaptive-tab-item {
+    @apply font-roboto font-bold text-xs text-gray-400 hover:text-black focus:text-black hover:border-b hover:border-b-blue-300 focus:border-b focus:border-b-blue-300 focus:outline-none focus:ring-0 px-4 py-3;
+  }
+  .box-tab-item {
+    @apply font-roboto font-bold text-sm text-gray-400 border-b border-gray-400 focus:border-b-0 hover:border-r focus:border-r hover:border-t focus:border-t  hover:text-black focus:text-black hover:bg-gray-300 focus:outline-none focus:ring-0 px-4 py-3;
+  }
+  .adaptive-box-tab-item {
+    @apply font-roboto font-bold text-xs text-gray-400 border-b border-gray-400 focus:border-b-0 hover:border-r focus:border-r hover:border-t focus:border-t  hover:text-black focus:text-black hover:bg-gray-300 focus:outline-none focus:ring-0 px-4 py-3;
+  }
+
+  /* breadcrum */
+  .breadcrum-item {
+    @apply font-roboto font-medium text-sm hover:border-b focus:border-b text-gray-400 hover:text-black focus:text-black hover:border-gray-400 focus:border-gray-400;
+  }
 }
